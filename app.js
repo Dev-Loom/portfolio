@@ -50,6 +50,12 @@ app.get("/project", async (req, res) => {
   }
 });
 
+app.use("/ping", (req, res) => {
+  res.send({
+    message: "sucess",
+  });
+});
+
 //Starting up server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
