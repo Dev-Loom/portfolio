@@ -50,9 +50,9 @@ app.get("/project", async (req, res) => {
   }
 });
 
-app.use("/ping", (req, res) => {
+app.get("/ping", (req, res) => {
   res.send({
-    message: "sucess",
+    message: "success",
   });
 });
 
